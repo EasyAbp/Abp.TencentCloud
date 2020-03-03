@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Shouldly;
 using Xunit;
@@ -30,6 +31,8 @@ namespace Zony.Abp.TencentCloudSdk.CloudLive.Tests
                 TencentCloudSdkCloudLiveOptions.EndPoint);
 
             resp.RequestId.ShouldNotBeNull();
+            var allFlux = resp.DataInfoList.Where(x => x.Flux > 0).Sum(x => x.Flux);
+            var maxBandwidth = resp.DataInfoList.Where(x => x.Bandwidth > 0).Max(x => x.Bandwidth);
         }
     }
 }

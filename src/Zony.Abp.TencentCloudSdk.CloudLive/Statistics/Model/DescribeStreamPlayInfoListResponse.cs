@@ -21,12 +21,12 @@ namespace Zony.Abp.TencentCloudSdk.CloudLive.Statistics.Model
         /// <summary>
         /// 
         /// </summary>
-        public int Bandwidth { get; set; }
+        public double Bandwidth { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public int Flux { get; set; }
+        public double Flux { get; set; }
 
         /// <summary>
         /// 
