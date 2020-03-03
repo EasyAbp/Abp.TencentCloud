@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA809AD0-F6C9-4E21-91FA-A7D859721C0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1EC08153-A99B-4661-AF45-7AA674AF0863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zony.Abp.TencentCloudSdk.Common", "src\Zony.Abp.TencentCloudSdk.Common\Zony.Abp.TencentCloudSdk.Common.csproj", "{817EF494-7C55-4073-9BC2-791873A5997B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zony.Abp.TencentCloudSdk.CloudLive", "src\Zony.Abp.TencentCloudSdk.CloudLive\Zony.Abp.TencentCloudSdk.CloudLive.csproj", "{E17020B3-FEFF-49D6-B391-F4E72E3C2743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zony.Abp.TencentCloudSdk.CloudLive.Tests", "tests\Zony.Abp.TencentCloudSdk.CloudLive.Tests\Zony.Abp.TencentCloudSdk.CloudLive.Tests.csproj", "{F3851B0C-605B-4640-B38E-51E9FAEE284C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zony.Abp.TencentCloudSdk.TestBase", "tests\Zony.Abp.TencentCloudSdk.TestBase\Zony.Abp.TencentCloudSdk.TestBase.csproj", "{1438236B-639F-49F2-AA47-8299671BD096}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{817EF494-7C55-4073-9BC2-791873A5997B} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+		{1438236B-639F-49F2-AA47-8299671BD096} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+	EndGlobalSection
+EndGlobal
