@@ -4,7 +4,7 @@ namespace Zony.Abp.TencentCloudSdk.COS.Infrastructure
 {
     public interface IBucketOperator
     {
-        Task Create();
+        Task Create(string bucket);
 
         Task Delete();
 

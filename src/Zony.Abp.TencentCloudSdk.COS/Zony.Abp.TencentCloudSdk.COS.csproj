@@ -8,4 +8,8 @@
       <ProjectReference Include="..\Zony.Abp.TencentCloudSdk.Common\Zony.Abp.TencentCloudSdk.Common.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Tencent.QCloud.Cos.Sdk" Version="5.4.9" />
+    </ItemGroup>
+
 </Project>
