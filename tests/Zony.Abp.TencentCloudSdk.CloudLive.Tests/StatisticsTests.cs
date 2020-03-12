@@ -34,5 +34,17 @@ namespace Zony.Abp.TencentCloudSdk.CloudLive.Tests
             var allFlux = resp.DataInfoList.Where(x => x.Flux > 0).Sum(x => x.Flux);
             var maxBandwidth = resp.DataInfoList.Where(x => x.Bandwidth > 0).Max(x => x.Bandwidth);
         }
+
+        [Fact]
+        public async Task DescribeStreamDayPlayInfoListRequest_Test()
+        {
+            var resp = await TencentCloudApiRequester.SendRequestAsync<DescribeStreamDayPlayInfoListResponse>(
+                new DescribeStreamDayPlayInfoListRequest(
+                    "2020-03-12"),
+                TencentCloudSdkCloudLiveOptions.EndPoint);
+
+            resp.RequestId.ShouldNotBeNull();
+            resp.DataInfoList.Count.ShouldBeGreaterThan(0);
+        }
     }
 }
