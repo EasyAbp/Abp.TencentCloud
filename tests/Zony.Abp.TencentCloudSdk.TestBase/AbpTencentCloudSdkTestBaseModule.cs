@@ -16,6 +16,7 @@ namespace Zony.Abp.TencentCloudSdk.TestBase
             {
                 op.SecretId = AbpTencentCloudSdkConsts.SecretId;
                 op.SecretKey = AbpTencentCloudSdkConsts.SecretKey;
+                op.AppId = AbpTencentCloudSdkConsts.AppId;
             });
         }
     }

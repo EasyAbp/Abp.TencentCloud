@@ -4,5 +4,6 @@
     {
         public const string SecretId = "";
         public const string SecretKey = "";
+        public const string AppId = "";
     }
 }
