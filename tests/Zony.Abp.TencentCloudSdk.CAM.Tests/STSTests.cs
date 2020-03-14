@@ -22,13 +22,21 @@ namespace Zony.Abp.TencentCloudSdk.CAM.Tests
                         Effect = "allow",
                         Action = new List<string>
                         {
+                            "name/cos:PutObject",
                             "name/cos:PostObject",
-                            "name/cos:PutObject"
+                            "name/cos:InitiateMultipartUpload",
+                            "name/cos:ListMultipartUploads",
+                            "name/cos:ListParts",
+                            "name/cos:UploadPart",
+                            "name/cos:CompleteMultipartUpload",
+                            "name/cos:AbortMultipartUpload",
+                            "name/cos:GetBucket",
+                            "name/cos:HeadObject"
                         },
                         Resource = new List<string>
                         {
                             // TODO: 如果是 COS 的话，需要手动构造前缀。
-                            $"qcs::cos:ap-chengdu:uid/{TencentCloudSdkCommonOptions.AppId}:246e0ec0-a410-4bfb-b566-e28cab463dbc-{TencentCloudSdkCommonOptions.AppId}/*"
+                            $"qcs::cos:ap-chengdu:uid/{TencentCloudSdkCommonOptions.AppId}:d780c447-3f23-9212-f4d3-39f3d9a69a3e-{TencentCloudSdkCommonOptions.AppId}/*"
                         }
                     }
                 }

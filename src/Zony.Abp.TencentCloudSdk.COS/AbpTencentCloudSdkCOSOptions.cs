@@ -8,11 +8,6 @@
         public string Region { get; set; }
 
         /// <summary>
-        /// 设置腾讯云账户的账户标识 Id。
-        /// </summary>
-        public string AppId { get; set; }
-
-        /// <summary>
         /// 连接超时时间，单位是秒，默认值为 60 秒。
         /// </summary>
         public int ConnectionTimeout { get; set; }

@@ -15,10 +15,12 @@ namespace Zony.Abp.TencentCloudSdk.COS.QCloudImplement
             CosServerWrapObject = cosServerWrapObject;
         }
 
-        public Task Create(string bucket)
+        public Task<string> Create(string bucket)
         {
-            CosServerWrapObject.CosXmlServer.PutBucket(new PutBucketRequest(bucket));
-            return Task.CompletedTask;
+            var request = CosServerWrapObject.CosXmlServer.PutBucket(new PutBucketRequest(bucket));
+            var result = request.GetResultInfo();
+
+            return Task.FromResult(result);
         }
 
         public Task Delete()

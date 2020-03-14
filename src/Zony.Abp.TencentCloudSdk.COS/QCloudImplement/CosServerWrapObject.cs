@@ -33,7 +33,7 @@ namespace Zony.Abp.TencentCloudSdk.COS.QCloudImplement
                 .SetConnectionLimit(TimeSpan.FromSeconds(_abpTencentCloudSdkCOSOptions.ConnectionTimeout).TotalMilliseconds.To<int>())
                 .SetReadWriteTimeoutMs(TimeSpan.FromSeconds(_abpTencentCloudSdkCOSOptions.ReadWriteTimeout).TotalMilliseconds.To<int>())
                 .IsHttps(true)
-                .SetAppid(_abpTencentCloudSdkCOSOptions.AppId)
+                .SetAppid(_abpTencentCloudSdkCommonOptions.AppId)
                 .SetRegion(_abpTencentCloudSdkCOSOptions.Region)
                 .SetDebugLog(false)
                 .Build();
