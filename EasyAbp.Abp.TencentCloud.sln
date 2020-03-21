@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA809AD0-F6C9-4E21-91FA-A7D859721C0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1EC08153-A99B-4661-AF45-7AA674AF0863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.Common", "src\EasyAbp.Abp.TencentCloud.Common\EasyAbp.Abp.TencentCloud.Common.csproj", "{817EF494-7C55-4073-9BC2-791873A5997B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudLive", "src\EasyAbp.Abp.TencentCloud.CloudLive\EasyAbp.Abp.TencentCloud.CloudLive.csproj", "{E17020B3-FEFF-49D6-B391-F4E72E3C2743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudLive.Tests", "test\EasyAbp.Abp.TencentCloud.CloudLive.Tests\EasyAbp.Abp.TencentCloud.CloudLive.Tests.csproj", "{F3851B0C-605B-4640-B38E-51E9FAEE284C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.TestBase", "test\EasyAbp.Abp.TencentCloud.TestBase\EasyAbp.Abp.TencentCloud.TestBase.csproj", "{1438236B-639F-49F2-AA47-8299671BD096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.COS", "src\EasyAbp.Abp.TencentCloud.COS\EasyAbp.Abp.TencentCloud.COS.csproj", "{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudMonitor", "src\EasyAbp.Abp.TencentCloud.CloudMonitor\EasyAbp.Abp.TencentCloud.CloudMonitor.csproj", "{F4427E96-6D6D-4AC0-89BA-12CB573B2D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudMonitor.Tests", "test\EasyAbp.Abp.TencentCloud.CloudMonitor.Tests\EasyAbp.Abp.TencentCloud.CloudMonitor.Tests.csproj", "{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CAM", "src\EasyAbp.Abp.TencentCloud.CAM\EasyAbp.Abp.TencentCloud.CAM.csproj", "{80EEDFAF-5360-42A8-AB56-8DF504AD9C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CAM.Tests", "test\EasyAbp.Abp.TencentCloud.CAM.Tests\EasyAbp.Abp.TencentCloud.CAM.Tests.csproj", "{426EB78E-6488-4D89-83A2-545CBDDDA3F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.COS.Tests", "test\EasyAbp.Abp.TencentCloud.COS.Tests\EasyAbp.Abp.TencentCloud.COS.Tests.csproj", "{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817EF494-7C55-4073-9BC2-791873A5997B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1438236B-639F-49F2-AA47-8299671BD096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4427E96-6D6D-4AC0-89BA-12CB573B2D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4427E96-6D6D-4AC0-89BA-12CB573B2D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4427E96-6D6D-4AC0-89BA-12CB573B2D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4427E96-6D6D-4AC0-89BA-12CB573B2D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80EEDFAF-5360-42A8-AB56-8DF504AD9C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EEDFAF-5360-42A8-AB56-8DF504AD9C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EEDFAF-5360-42A8-AB56-8DF504AD9C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EEDFAF-5360-42A8-AB56-8DF504AD9C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426EB78E-6488-4D89-83A2-545CBDDDA3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426EB78E-6488-4D89-83A2-545CBDDDA3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426EB78E-6488-4D89-83A2-545CBDDDA3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426EB78E-6488-4D89-83A2-545CBDDDA3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{817EF494-7C55-4073-9BC2-791873A5997B} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+		{E17020B3-FEFF-49D6-B391-F4E72E3C2743} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+		{F3851B0C-605B-4640-B38E-51E9FAEE284C} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+		{1438236B-639F-49F2-AA47-8299671BD096} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+		{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+		{F4427E96-6D6D-4AC0-89BA-12CB573B2D13} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+		{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+		{80EEDFAF-5360-42A8-AB56-8DF504AD9C45} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+		{426EB78E-6488-4D89-83A2-545CBDDDA3F8} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+		{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+	EndGlobalSection
+EndGlobal

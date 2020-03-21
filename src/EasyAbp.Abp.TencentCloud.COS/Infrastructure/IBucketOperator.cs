@@ -1,0 +1,33 @@
+﻿using System.Threading.Tasks;
+
+namespace EasyAbp.Abp.TencentCloud.COS.Infrastructure
+{
+    public interface IBucketOperator
+    {
+        Task<string> Create(string bucket);
+
+        Task Delete();
+
+        Task ConfigureCors();
+
+        Task GetCorsInfo();
+
+        Task DeleteCors();
+
+        Task ConfigureLifecycle();
+
+        Task GetLifecycleInfo();
+
+        Task DeleteLifecycle();
+
+        Task ConfigureVersioning();
+
+        Task GetVersioning();
+
+        Task ConfigureReplication();
+
+        Task GetReplication();
+
+        Task DeleteReplication();
+    }
+}
