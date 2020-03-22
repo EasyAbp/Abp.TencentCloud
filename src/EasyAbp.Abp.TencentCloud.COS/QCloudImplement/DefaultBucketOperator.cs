@@ -15,7 +15,7 @@ namespace EasyAbp.Abp.TencentCloud.COS.QCloudImplement
             CosServerWrapObject = cosServerWrapObject;
         }
 
-        public Task<string> Create(string bucket)
+        public Task<string> CreateAsync(string bucket)
         {
             var request = CosServerWrapObject.CosXmlServer.PutBucket(new PutBucketRequest(bucket));
             var result = request.GetResultInfo();
@@ -23,62 +23,63 @@ namespace EasyAbp.Abp.TencentCloud.COS.QCloudImplement
             return Task.FromResult(result);
         }
 
-        public Task Delete()
+        public Task<string> DeleteAsync(string bucket)
+        {
+            var request = CosServerWrapObject.CosXmlServer.DeleteBucket(new DeleteBucketRequest(bucket));
+            throw new NotImplementedException();
+        }
+
+        public Task<string> ConfigureCorsAsync(string[] sourceOrigin)
         {
             throw new NotImplementedException();
         }
 
-        public Task ConfigureCors()
+        public Task GetCorsInfoAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task GetCorsInfo()
+        public Task DeleteCorsAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task DeleteCors()
+        public Task ConfigureLifecycleAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task ConfigureLifecycle()
+        public Task GetLifecycleInfoAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task GetLifecycleInfo()
+        public Task DeleteLifecycleAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task DeleteLifecycle()
+        public Task ConfigureVersioningAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task ConfigureVersioning()
+        public Task GetVersioningAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task GetVersioning()
+        public Task ConfigureReplicationAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task ConfigureReplication()
+        public Task GetReplicationAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task GetReplication()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteReplication()
+        public Task DeleteReplicationAsync()
         {
             throw new NotImplementedException();
         }

@@ -4,30 +4,30 @@ namespace EasyAbp.Abp.TencentCloud.COS.Infrastructure
 {
     public interface IBucketOperator
     {
-        Task<string> Create(string bucket);
+        Task<string> CreateAsync(string bucket);
 
-        Task Delete();
+        Task<string> DeleteAsync(string bucket);
 
-        Task ConfigureCors();
+        Task<string> ConfigureCorsAsync(string[] sourceOrigin);
 
-        Task GetCorsInfo();
+        Task GetCorsInfoAsync();
 
-        Task DeleteCors();
+        Task DeleteCorsAsync();
 
-        Task ConfigureLifecycle();
+        Task ConfigureLifecycleAsync();
 
-        Task GetLifecycleInfo();
+        Task GetLifecycleInfoAsync();
 
-        Task DeleteLifecycle();
+        Task DeleteLifecycleAsync();
 
-        Task ConfigureVersioning();
+        Task ConfigureVersioningAsync();
 
-        Task GetVersioning();
+        Task GetVersioningAsync();
 
-        Task ConfigureReplication();
+        Task ConfigureReplicationAsync();
 
-        Task GetReplication();
+        Task GetReplicationAsync();
 
-        Task DeleteReplication();
+        Task DeleteReplicationAsync();
     }
 }
