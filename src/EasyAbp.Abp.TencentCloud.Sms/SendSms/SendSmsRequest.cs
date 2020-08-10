@@ -5,11 +5,10 @@ namespace EasyAbp.Abp.TencentCloud.Sms.SendSms
     public class SendSmsRequest : CommonRequest
     {
         public SendSmsRequest(
-            string nationCode,
             string[] phoneNumberSet,
             string templateId,
             string smsSdkAppid,
-            string sign,
+            string sign = null,
             string[] templateParamSet = null,
             string extendCode = null,
             string senderId = null)
@@ -19,9 +18,8 @@ namespace EasyAbp.Abp.TencentCloud.Sms.SendSms
 
             SetRequestBody(new
             {
-                NationCode = nationCode,
                 PhoneNumberSet = phoneNumberSet,
-                TemplateId = templateId,
+                TemplateID = templateId,
                 SmsSdkAppid = smsSdkAppid,
                 Sign = sign,
                 TemplateParamSet = templateParamSet,
