@@ -11,6 +11,7 @@ namespace EasyAbp.Abp.TencentCloud.Sms.SendSms
             string sign = null,
             string[] templateParamSet = null,
             string extendCode = null,
+            string sessionContext = null,
             string senderId = null)
         {
             SetAction("SendSms");
@@ -24,6 +25,7 @@ namespace EasyAbp.Abp.TencentCloud.Sms.SendSms
                 Sign = sign,
                 TemplateParamSet = templateParamSet,
                 ExtendCode = extendCode,
+                SessionContext = sessionContext,
                 SenderId = senderId
             });
         }

@@ -1,4 +1,4 @@
-﻿using EasyAbp.Abp.TencentCloud.COS;
+﻿using EasyAbp.Abp.TencentCloud.Sms;
 using Volo.Abp.Modularity;
 using EasyAbp.Abp.TencentCloud.TestBase;
 
