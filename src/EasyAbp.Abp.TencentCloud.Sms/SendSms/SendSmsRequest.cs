@@ -1,10 +1,10 @@
 ﻿using EasyAbp.Abp.TencentCloud.Common.Models;
 
-namespace EasyAbp.Abp.TencentCloud.Sms.SendMessage
+namespace EasyAbp.Abp.TencentCloud.Sms.SendSms
 {
-    public class SendMessageRequest : CommonRequest
+    public class SendSmsRequest : CommonRequest
     {
-        public SendMessageRequest(
+        public SendSmsRequest(
             string nationCode,
             string[] phoneNumberSet,
             string templateId,

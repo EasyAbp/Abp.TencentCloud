@@ -1,18 +1,18 @@
 using System.Linq;
 using System.Threading.Tasks;
-using EasyAbp.Abp.TencentCloud.Sms.SendMessage;
+using EasyAbp.Abp.TencentCloud.Sms.SendSms;
 using Shouldly;
 using Xunit;
 
 namespace EasyAbp.Abp.TencentCloud.CloudMonitor.Tests
 {
-    public class SendMessageTests : AbpTencentCloudCloudMonitorTestBase
+    public class SendSmsTests : AbpTencentCloudCloudMonitorTestBase
     {
         [Fact]
-        public async Task SendMessageTest()
+        public async Task SendSmsTest()
         {
-            var result = await TencentCloudApiRequester.SendRequestAsync<SendMessageResponse>(
-                new SendMessageRequest(
+            var result = await TencentCloudApiRequester.SendRequestAsync<SendSmsResponse>(
+                new SendSmsRequest(
                     "86",
                     new []{"13000000000"},
                     "400000",

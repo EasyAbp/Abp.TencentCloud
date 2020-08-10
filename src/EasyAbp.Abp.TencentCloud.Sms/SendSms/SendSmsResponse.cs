@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using EasyAbp.Abp.TencentCloud.Common.Models;
 
-namespace EasyAbp.Abp.TencentCloud.Sms.SendMessage
+namespace EasyAbp.Abp.TencentCloud.Sms.SendSms
 {
-    public class SendMessageResponse : CommonResponse
+    public class SendSmsResponse : CommonResponse
     {
         public List<SendStatusSet> SendStatusSet { get; set; }
     }
