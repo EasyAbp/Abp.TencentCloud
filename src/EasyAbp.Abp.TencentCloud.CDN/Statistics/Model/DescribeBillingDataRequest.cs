@@ -12,12 +12,12 @@ namespace EasyAbp.Abp.TencentCloud.CDN.Statistics.Model
         /// 构造一个 <see cref="DescribeBillingDataRequest"/> 对象。
         /// </summary>
         /// <param name="startTime">
-        /// 查询起始时间，如：2018-09-04 10:40:00，返回结果大于等于指定时间。<br/>
+        /// 查询起始时间，如: 2018-09-04 10:40:00，返回结果大于等于指定时间。<br/>
         /// 根据指定时间粒度参数不同，会进行向前取整，如指定起始时间为 2018-09-04 10:40:00 按小时粒度查询，返回的第一个数据对应时间点为 2018-09-04 10:00:00<br/>
         /// 起始时间与结束时间间隔小于等于 90 天。
         /// </param>
         /// <param name="endTime">
-        /// 查询结束时间，如：2018-09-04 10:40:00，返回结果小于等于指定时间根据指定时间粒度参数不同，会进行向前取整。<br/>
+        /// 查询结束时间，如: 2018-09-04 10:40:00，返回结果小于等于指定时间根据指定时间粒度参数不同，会进行向前取整。<br/>
         /// 如指定结束时间为 2018-09-04 10:40:00 按小时粒度查询时，返回的最后一个数据对应时间点为 2018-09-04 10:00:00 起始时间与结束时间间隔小于等于 90 天。
         /// </param>
         /// <param name="interval">
@@ -31,13 +31,20 @@ namespace EasyAbp.Abp.TencentCloud.CDN.Statistics.Model
         /// <param name="domain">指定域名查询计费数据。</param>
         /// <param name="project">指定项目 ID 查询，若 Domain 参数填充了具体域名信息，则返回该域名的计费数据，而非指定项目计费数据</param>
         /// <param name="area">
-        /// 指定加速区域查询计费数据：<br/>
-        /// mainland：中国境内<br/>
-        /// overseas：中国境外<br/>
+        /// 指定加速区域查询计费数据。<br/>
+        /// mainland: 中国境内。<br/>
+        /// overseas: 中国境外。<br/>
         /// 不填充时，默认为 mainland
         /// </param>
-        /// <param name="district"></param>
-        /// <param name="metric"></param>
+        /// <param name="district">
+        /// Area 为 overseas 时，指定国家/地区查询。<br/>
+        /// 不填充时，查询所有国家/地区。
+        /// </param>
+        /// <param name="metric">计费统计类型。<br/>
+        /// flux: 计费流量。<br/>
+        /// bandwidth: 计费带宽。<br/>
+        /// 默认值为 bandwidth。
+        /// </param>
         public DescribeBillingDataRequest([NotNull] string startTime,
             [NotNull] string endTime,
             [CanBeNull] string interval = null,
