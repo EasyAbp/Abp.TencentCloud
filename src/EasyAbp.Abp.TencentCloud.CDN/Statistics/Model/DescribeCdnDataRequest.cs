@@ -21,7 +21,10 @@ namespace EasyAbp.Abp.TencentCloud.CDN.Statistics.Model
         /// 根据指定时间粒度不同，会进行向前归整，如 2018-09-04 10:40:00 在按 1 小时的时间粒度查询时，返回的最后一个数据对应时间点为 2018-09-04 10:00:00。<br/>
         /// 起始时间与结束时间间隔小于等于 90 天。
         /// </param>
-        /// <param name="metric">指定查询指标，支持的查询类型定义参考 <see cref="CdnQueryMetrics"/> 类。</param>
+        /// <param name="metric">
+        /// 指定查询指标，支持的查询类型定义参考 <see cref="DescribeCdnDataMetrics"/> 类。<br/>
+        /// 状态码可以指定具体的进行查询，例如 204 等。
+        /// </param>
         /// <param name="domains">指定查询域名列表，最多可一次性查询 30 个加速域名明细。</param>
         /// <param name="project">
         /// 指定要查询的项目 ID。<br/>

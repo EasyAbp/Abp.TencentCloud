@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\common.props"/>
+    <Import Project="..\..\common.props" />
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\EasyAbp.Abp.TencentCloud.Common\EasyAbp.Abp.TencentCloud.Common.csproj"/>
+        <ProjectReference Include="..\EasyAbp.Abp.TencentCloud.Common\EasyAbp.Abp.TencentCloud.Common.csproj" />
     </ItemGroup>
 
 </Project>
