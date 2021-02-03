@@ -1,18 +1,17 @@
-﻿using Microsoft.Extensions.Options;
-using EasyAbp.Abp.TencentCloud.Common;
+﻿using EasyAbp.Abp.TencentCloud.Common;
 using EasyAbp.Abp.TencentCloud.Common.Requester;
-using EasyAbp.Abp.TencentCloud.Sms;
 using EasyAbp.Abp.TencentCloud.TestBase;
+using Microsoft.Extensions.Options;
 
-namespace EasyAbp.Abp.TencentCloud.CloudMonitor.Tests
+namespace EasyAbp.Abp.TencentCloud.Sms.Tests
 {
-    public class AbpTencentCloudCloudMonitorTestBase : AbpTencentCloudTestBase<AbpTencentCloudCloudMonitorTestsModule>
+    public class AbpTencentCloudSmsTestBase : AbpTencentCloudTestBase<AbpTencentCloudSmsTestsModule>
     {
         protected readonly ITencentCloudApiRequester TencentCloudApiRequester;
         protected readonly AbpTencentCloudSmsOptions TencentCloudSmsOptions;
         protected readonly AbpTencentCloudCommonOptions TencentCloudCommonOptions;
 
-        public AbpTencentCloudCloudMonitorTestBase()
+        public AbpTencentCloudSmsTestBase()
         {
             TencentCloudApiRequester = GetRequiredService<ITencentCloudApiRequester>();
             TencentCloudSmsOptions = GetRequiredService<IOptions<AbpTencentCloudSmsOptions>>().Value;

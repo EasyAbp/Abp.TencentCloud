@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>EasyAbp.Abp.TencentCloud.Cls</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyAbp.Abp.TencentCloud.Common\EasyAbp.Abp.TencentCloud.Common.csproj" />
+  </ItemGroup>
+
+</Project>

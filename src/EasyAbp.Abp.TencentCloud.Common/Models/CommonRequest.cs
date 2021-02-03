@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -11,8 +12,14 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
         public HttpRequestMessage HttpRequestMessage { get; }
 
         protected string Endpoint { get; private set; }
+        
+        protected string Scheme { get; private set; }
+        
+        protected string ApiPath { get; private set; }
 
         protected string RequestBody { get; private set; }
+
+        protected Dictionary<string, string> RequestParamsRecord { get; private set; } = new();
 
         protected string ServiceName
         {
@@ -27,8 +34,12 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
 
         protected long Timestamp { get; }
 
-        public CommonRequest()
+        public CommonRequest(string apiPath = null, string scheme = "https")
         {
+            ApiPath = apiPath;
+
+            Scheme = scheme;
+
             Timestamp = DateTimeExtensions.GetUtcUnixTimestamp();
 
             HttpRequestMessage = new HttpRequestMessage
@@ -49,7 +60,8 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
         public virtual void SetEndpoint(string endpoint)
         {
             Endpoint = endpoint;
-            HttpRequestMessage.RequestUri = new Uri($"https://{Endpoint}");
+            
+            HttpRequestMessage.RequestUri = new Uri($"{Scheme}://{Endpoint}/{ApiPath}");
         }
 
         protected virtual string BuildPayloadSign() => RequestBody.ToSha256();
@@ -131,12 +143,15 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
             HttpRequestMessage.Headers.TryAddWithoutValidation("Authorization", sb.ToString());
         }
 
-        protected void SetRequestBody(object jsonObj)
+        protected void SetRequestBody(object paramsObj)
         {
-            RequestBody = JsonConvert.SerializeObject(jsonObj, new JsonSerializerSettings
+            RequestBody = JsonConvert.SerializeObject(paramsObj, new JsonSerializerSettings
             {
                 NullValueHandling = NullValueHandling.Ignore
             });
+            
+            RequestParamsRecord = JsonConvert.DeserializeObject<Dictionary<string, string>>(RequestBody);
+
             HttpRequestMessage.Content = new StringContent(RequestBody);
             HttpRequestMessage.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
             HttpRequestMessage.Content.Headers.Add("charset", "utf-8");

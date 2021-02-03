@@ -11,8 +11,4 @@
         <ProjectReference Include="..\EasyAbp.Abp.TencentCloud.Common\EasyAbp.Abp.TencentCloud.Common.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Tencent.QCloud.Cos.Sdk" Version="5.4.17" />
-    </ItemGroup>
-
 </Project>

@@ -4,9 +4,9 @@ using EasyAbp.Abp.TencentCloud.Sms.SendSms;
 using Shouldly;
 using Xunit;
 
-namespace EasyAbp.Abp.TencentCloud.CloudMonitor.Tests
+namespace EasyAbp.Abp.TencentCloud.Sms.Tests
 {
-    public class SendSmsTests : AbpTencentCloudCloudMonitorTestBase
+    public class SendSmsTests : AbpTencentCloudSmsTestBase
     {
         [Fact]
         public async Task SendSmsTest()
