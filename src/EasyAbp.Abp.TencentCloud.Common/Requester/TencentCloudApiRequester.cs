@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
@@ -37,7 +38,10 @@ namespace EasyAbp.Abp.TencentCloud.Common.Requester
             using var response = await HttpClient.SendAsync(request.HttpRequestMessage);
             
             var result = await response.Content.ReadAsStringAsync();
-            return JObject.Parse(result).SelectToken("$.Response").ToObject<TResponse>();
+
+            return request.ResultRoot.IsNullOrEmpty()
+                ? JObject.Parse(result).ToObject<TResponse>()
+                : JObject.Parse(result).SelectToken($"$.{request.ResultRoot}").ToObject<TResponse>();
         }
     }
 }

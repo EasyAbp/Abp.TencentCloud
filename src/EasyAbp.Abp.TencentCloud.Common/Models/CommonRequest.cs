@@ -9,6 +9,8 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
 {
     public abstract class CommonRequest : ICommonRequest
     {
+        public virtual string ResultRoot { get; } = "Response";
+
         public HttpRequestMessage HttpRequestMessage { get; }
 
         protected string Endpoint { get; private set; }

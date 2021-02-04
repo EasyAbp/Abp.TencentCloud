@@ -4,6 +4,8 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
 {
     public interface ICommonRequest
     {
+        string ResultRoot { get; }
+
         HttpRequestMessage HttpRequestMessage { get; }
 
         void SetAction(string action);
