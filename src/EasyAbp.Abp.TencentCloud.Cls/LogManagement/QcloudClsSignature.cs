@@ -95,7 +95,7 @@ namespace EasyAbp.Abp.TencentCloud.Cls.LogManagement
             return hexStr.ToString();
         }
 
-        public static string BuildSignature(string secretId, string secretKey, string method, string path, Dictionary<string, string> @params, Dictionary<string, string> headers, long expire)
+        public static string BuildSignature(string secretId, string secretKey, string method, string path, Dictionary<string, object> @params, Dictionary<string, string> headers, long expire)
         {
             StringBuilder formatString = new StringBuilder();
             formatString.Append(method.ToLower()).Append('\n'); // method
@@ -103,10 +103,10 @@ namespace EasyAbp.Abp.TencentCloud.Cls.LogManagement
 
             Dictionary<string, string> filteredParms = new Dictionary<string, string>();
             List<string> parmKeys = new List<string>();
-            foreach (KeyValuePair<string, string> kv in @params)
+            foreach (KeyValuePair<string, object> kv in @params)
             {
                 parmKeys.Add(kv.Key.ToLower());
-                filteredParms[kv.Key.ToLower()] = kv.Value;
+                filteredParms[kv.Key.ToLower()] = kv.Value.ToString();
             }
             parmKeys.Sort(delegate(string x, string y) { return string.Compare(x, y); });
 

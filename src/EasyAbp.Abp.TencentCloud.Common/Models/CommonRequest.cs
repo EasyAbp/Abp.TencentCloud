@@ -21,7 +21,7 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
 
         protected string RequestBody { get; private set; }
 
-        protected Dictionary<string, string> RequestParamsRecord { get; private set; } = new();
+        protected Dictionary<string, object> RequestParamsRecord { get; private set; } = new();
 
         protected string ServiceName
         {
@@ -152,7 +152,7 @@ namespace EasyAbp.Abp.TencentCloud.Common.Models
                 NullValueHandling = NullValueHandling.Ignore
             });
             
-            RequestParamsRecord = JsonConvert.DeserializeObject<Dictionary<string, string>>(RequestBody);
+            RequestParamsRecord = JsonConvert.DeserializeObject<Dictionary<string, object>>(RequestBody);
 
             HttpRequestMessage.Content = new StringContent(RequestBody);
             HttpRequestMessage.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
