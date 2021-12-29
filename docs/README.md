@@ -5,6 +5,8 @@
 [![NuGet Download](https://img.shields.io/nuget/dt/EasyAbp.Abp.TencentCloud.Common.svg?style=flat-square)](https://www.nuget.org/packages/EasyAbp.Abp.TencentCloud.Common)
 [![GitHub stars](https://img.shields.io/github/stars/EasyAbp/Abp.TencentCloud?style=social)](https://www.github.com/EasyAbp/Abp.TencentCloud)
 
+[![Discord online](https://badgen.net/discord/online-members/S6QaezrCRq?label=Discord)](https://discord.gg/S6QaezrCRq)
+
 专门为 ABP vNext 封装的腾讯云 SDK 模块。
 
 ## Installation
