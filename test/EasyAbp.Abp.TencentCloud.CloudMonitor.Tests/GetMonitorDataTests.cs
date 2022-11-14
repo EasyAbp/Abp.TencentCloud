@@ -76,6 +76,7 @@ namespace EasyAbp.Abp.TencentCloud.CloudMonitor.Tests
                 TencentCloudCloudMonitorOptions.EndPoint);
 
             result.ShouldNotBeNull();
+            result.Error.Message.ShouldNotBeNullOrWhiteSpace();
         }
     }
 }
