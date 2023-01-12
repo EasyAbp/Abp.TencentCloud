@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 using EasyAbp.Abp.TencentCloud.Common.Models;
 using Newtonsoft.Json;
 
@@ -15,9 +16,11 @@ namespace EasyAbp.Abp.TencentCloud.Cls.LogManagement.SearchLog
 
     public class TencentClsLogObject
     {
+        [JsonPropertyName("topic_id")]
         [JsonProperty("topic_id")]
         public string TopicId { get; set; }
         
+        [JsonPropertyName("topic_name")]
         [JsonProperty("topic_name")]
         public string TopicName { get; set; }
         
