@@ -1,4 +1,5 @@
-﻿using Volo.Abp.Modularity;
+﻿using EasyAbp.Abp.TencentCloud.Common;
+using Volo.Abp.Modularity;
 using EasyAbp.Abp.TencentCloud.TestBase;
 
 namespace EasyAbp.Abp.TencentCloud.COS.Tests
@@ -9,9 +10,9 @@ namespace EasyAbp.Abp.TencentCloud.COS.Tests
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            Configure<AbpTencentCloudCOSOptions>(op =>
+            Configure<AbpTencentCloudCommonOptions>(op =>
             {
-                op.Region = "ap-chengdu";
+                op.Region = AbpTencentCloudConsts.Region;
             });
         }
     }

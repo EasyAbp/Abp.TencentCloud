@@ -34,7 +34,7 @@ namespace EasyAbp.Abp.TencentCloud.COS.QCloudImplement
                 .SetReadWriteTimeoutMs(TimeSpan.FromSeconds(_abpTencentCloudCOSOptions.ReadWriteTimeout).TotalMilliseconds.To<int>())
                 .IsHttps(true)
                 .SetAppid(_abpTencentCloudCommonOptions.AppId)
-                .SetRegion(_abpTencentCloudCOSOptions.Region)
+                .SetRegion(_abpTencentCloudCommonOptions.Region)
                 .SetDebugLog(false)
                 .Build();
         }

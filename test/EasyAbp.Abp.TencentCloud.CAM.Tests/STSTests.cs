@@ -44,7 +44,6 @@ namespace EasyAbp.Abp.TencentCloud.CAM.Tests
 
             var result = await TencentCloudApiRequester.SendRequestAsync<GetFederationTokenResponse>(
                 new GetFederationTokenRequest(
-                    "ap-chengdu",
                     "ETS",
                     policy,
                     7200), "sts.tencentcloudapi.com"

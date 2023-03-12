@@ -6,7 +6,7 @@ namespace EasyAbp.Abp.TencentCloud.CloudMonitor.BaseMonitor
 {
     public class GetMonitorDataRequest : CommonRequest
     {
-        public GetMonitorDataRequest(string region,
+        public GetMonitorDataRequest(
             List<Instance> instances,
             string @namespace,
             string metricName,
@@ -16,7 +16,6 @@ namespace EasyAbp.Abp.TencentCloud.CloudMonitor.BaseMonitor
         {
             SetAction("GetMonitorData");
             SetVersion("2018-07-24");
-            SetRegion(region);
 
             SetRequestBody(new
             {
