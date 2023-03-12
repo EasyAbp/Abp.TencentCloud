@@ -11,7 +11,7 @@ namespace EasyAbp.Abp.TencentCloud.Cls.Tests
         {
             Configure<AbpTencentCloudClsOptions>(op =>
             {
-                op.Region = "ap-guangzhou";
+                op.Region = AbpTencentCloudConsts.Region;
                 op.IsIntranet = false;
             });
         }

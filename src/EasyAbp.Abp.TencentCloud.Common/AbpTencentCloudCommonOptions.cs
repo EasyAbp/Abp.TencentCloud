@@ -7,5 +7,7 @@
         public string SecretKey { get; set; }
 
         public string AppId { get; set; }
+
+        public string Region { get; set; }
     }
 }

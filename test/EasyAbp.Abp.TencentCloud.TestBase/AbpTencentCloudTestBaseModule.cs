@@ -17,6 +17,7 @@ namespace EasyAbp.Abp.TencentCloud.TestBase
                 op.SecretId = AbpTencentCloudConsts.SecretId;
                 op.SecretKey = AbpTencentCloudConsts.SecretKey;
                 op.AppId = AbpTencentCloudConsts.AppId;
+                op.Region = AbpTencentCloudConsts.Region;
             });
         }
     }

@@ -15,7 +15,6 @@ namespace EasyAbp.Abp.TencentCloud.CloudMonitor.Tests
         {
             var result = await TencentCloudApiRequester.SendRequestAsync<GetMonitorDataResponse>(
                 new GetMonitorDataRequest(
-                    "ap-chengdu",
                     new List<Instance>
                     {
                         new Instance
@@ -51,7 +50,6 @@ namespace EasyAbp.Abp.TencentCloud.CloudMonitor.Tests
         {
             var result = await TencentCloudApiRequester.SendRequestAsync<GetMonitorDataResponse>(
                 new GetMonitorDataRequest(
-                    "ap-chengdu",
                     new List<Instance>
                     {
                         new Instance

@@ -7,14 +7,13 @@ namespace EasyAbp.Abp.TencentCloud.CAM.STS
 {
     public class GetFederationTokenRequest : CommonRequest
     {
-        public GetFederationTokenRequest(string region,
+        public GetFederationTokenRequest(
             string name,
             Policy policy,
             int? durationSeconds = null)
         {
             SetAction("GetFederationToken");
             SetVersion("2018-08-13");
-            SetRegion(region);
 
             if (durationSeconds > 7200) throw new ArgumentOutOfRangeException(nameof(durationSeconds), "有效期最大时长不得超过 7200 秒。");
 

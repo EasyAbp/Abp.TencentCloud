@@ -34,6 +34,7 @@ namespace EasyAbp.Abp.TencentCloud.Common.Requester
         {
             request.SetEndpoint(endpoint);
             request.SetAuthorization(options.SecretId, options.SecretKey);
+            request.SetRegion(options.Region);
 
             using var response = await HttpClient.SendAsync(request.HttpRequestMessage);
             
