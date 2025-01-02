@@ -1,38 +1,43 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA809AD0-F6C9-4E21-91FA-A7D859721C0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1EC08153-A99B-4661-AF45-7AA674AF0863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.Common", "src\EasyAbp.Abp.TencentCloud.Common\EasyAbp.Abp.TencentCloud.Common.csproj", "{817EF494-7C55-4073-9BC2-791873A5997B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.Common", "src\EasyAbp.Abp.TencentCloud.Common\EasyAbp.Abp.TencentCloud.Common.csproj", "{817EF494-7C55-4073-9BC2-791873A5997B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudLive", "src\EasyAbp.Abp.TencentCloud.CloudLive\EasyAbp.Abp.TencentCloud.CloudLive.csproj", "{E17020B3-FEFF-49D6-B391-F4E72E3C2743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.CloudLive", "src\EasyAbp.Abp.TencentCloud.CloudLive\EasyAbp.Abp.TencentCloud.CloudLive.csproj", "{E17020B3-FEFF-49D6-B391-F4E72E3C2743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudLive.Tests", "test\EasyAbp.Abp.TencentCloud.CloudLive.Tests\EasyAbp.Abp.TencentCloud.CloudLive.Tests.csproj", "{F3851B0C-605B-4640-B38E-51E9FAEE284C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.CloudLive.Tests", "test\EasyAbp.Abp.TencentCloud.CloudLive.Tests\EasyAbp.Abp.TencentCloud.CloudLive.Tests.csproj", "{F3851B0C-605B-4640-B38E-51E9FAEE284C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.TestBase", "test\EasyAbp.Abp.TencentCloud.TestBase\EasyAbp.Abp.TencentCloud.TestBase.csproj", "{1438236B-639F-49F2-AA47-8299671BD096}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.TestBase", "test\EasyAbp.Abp.TencentCloud.TestBase\EasyAbp.Abp.TencentCloud.TestBase.csproj", "{1438236B-639F-49F2-AA47-8299671BD096}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.COS", "src\EasyAbp.Abp.TencentCloud.COS\EasyAbp.Abp.TencentCloud.COS.csproj", "{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.COS", "src\EasyAbp.Abp.TencentCloud.COS\EasyAbp.Abp.TencentCloud.COS.csproj", "{24522BE7-54F7-4CB8-9FE0-1E58E6A170B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudMonitor", "src\EasyAbp.Abp.TencentCloud.CloudMonitor\EasyAbp.Abp.TencentCloud.CloudMonitor.csproj", "{F4427E96-6D6D-4AC0-89BA-12CB573B2D13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.CloudMonitor", "src\EasyAbp.Abp.TencentCloud.CloudMonitor\EasyAbp.Abp.TencentCloud.CloudMonitor.csproj", "{F4427E96-6D6D-4AC0-89BA-12CB573B2D13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CloudMonitor.Tests", "test\EasyAbp.Abp.TencentCloud.CloudMonitor.Tests\EasyAbp.Abp.TencentCloud.CloudMonitor.Tests.csproj", "{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.CloudMonitor.Tests", "test\EasyAbp.Abp.TencentCloud.CloudMonitor.Tests\EasyAbp.Abp.TencentCloud.CloudMonitor.Tests.csproj", "{C2EB6F80-AEBE-46E4-9F7A-4768C58BFFC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CAM", "src\EasyAbp.Abp.TencentCloud.CAM\EasyAbp.Abp.TencentCloud.CAM.csproj", "{80EEDFAF-5360-42A8-AB56-8DF504AD9C45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.CAM", "src\EasyAbp.Abp.TencentCloud.CAM\EasyAbp.Abp.TencentCloud.CAM.csproj", "{80EEDFAF-5360-42A8-AB56-8DF504AD9C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CAM.Tests", "test\EasyAbp.Abp.TencentCloud.CAM.Tests\EasyAbp.Abp.TencentCloud.CAM.Tests.csproj", "{426EB78E-6488-4D89-83A2-545CBDDDA3F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.CAM.Tests", "test\EasyAbp.Abp.TencentCloud.CAM.Tests\EasyAbp.Abp.TencentCloud.CAM.Tests.csproj", "{426EB78E-6488-4D89-83A2-545CBDDDA3F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.COS.Tests", "test\EasyAbp.Abp.TencentCloud.COS.Tests\EasyAbp.Abp.TencentCloud.COS.Tests.csproj", "{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.COS.Tests", "test\EasyAbp.Abp.TencentCloud.COS.Tests\EasyAbp.Abp.TencentCloud.COS.Tests.csproj", "{5DF73C10-0BC4-4D9B-80FF-8CCFF35E7B58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.Sms", "src\EasyAbp.Abp.TencentCloud.Sms\EasyAbp.Abp.TencentCloud.Sms.csproj", "{0C752FFB-C212-41BD-9ACB-914B145FB135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.Sms", "src\EasyAbp.Abp.TencentCloud.Sms\EasyAbp.Abp.TencentCloud.Sms.csproj", "{0C752FFB-C212-41BD-9ACB-914B145FB135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.Sms.Tests", "test\EasyAbp.Abp.TencentCloud.Sms.Tests\EasyAbp.Abp.TencentCloud.Sms.Tests.csproj", "{361CC010-0896-4AD5-961B-00D015D8C58C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.Sms.Tests", "test\EasyAbp.Abp.TencentCloud.Sms.Tests\EasyAbp.Abp.TencentCloud.Sms.Tests.csproj", "{361CC010-0896-4AD5-961B-00D015D8C58C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.CDN", "src\EasyAbp.Abp.TencentCloud.CDN\EasyAbp.Abp.TencentCloud.CDN.csproj", "{AC37CA9C-EC46-4164-A556-10A0ADF83558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.CDN", "src\EasyAbp.Abp.TencentCloud.CDN\EasyAbp.Abp.TencentCloud.CDN.csproj", "{AC37CA9C-EC46-4164-A556-10A0ADF83558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.Cls", "src\EasyAbp.Abp.TencentCloud.Cls\EasyAbp.Abp.TencentCloud.Cls.csproj", "{BEEA8068-D3A9-4D5E-9EBC-E976EECB3456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.Cls", "src\EasyAbp.Abp.TencentCloud.Cls\EasyAbp.Abp.TencentCloud.Cls.csproj", "{BEEA8068-D3A9-4D5E-9EBC-E976EECB3456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.Cls.Tests", "test\EasyAbp.Abp.TencentCloud.Cls.Tests\EasyAbp.Abp.TencentCloud.Cls.Tests.csproj", "{1647547B-F3A5-46B4-A856-CFC959B999A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.TencentCloud.Cls.Tests", "test\EasyAbp.Abp.TencentCloud.Cls.Tests\EasyAbp.Abp.TencentCloud.Cls.Tests.csproj", "{1647547B-F3A5-46B4-A856-CFC959B999A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.TencentCloud.Captcha", "src\EasyAbp.Abp.TencentCloud.Captcha\EasyAbp.Abp.TencentCloud.Captcha.csproj", "{81CC8290-EBE0-4F50-BAA1-EDD31F79723F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +105,13 @@ Global
 		{1647547B-F3A5-46B4-A856-CFC959B999A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1647547B-F3A5-46B4-A856-CFC959B999A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1647547B-F3A5-46B4-A856-CFC959B999A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81CC8290-EBE0-4F50-BAA1-EDD31F79723F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CC8290-EBE0-4F50-BAA1-EDD31F79723F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CC8290-EBE0-4F50-BAA1-EDD31F79723F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CC8290-EBE0-4F50-BAA1-EDD31F79723F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{817EF494-7C55-4073-9BC2-791873A5997B} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
@@ -117,5 +129,9 @@ Global
 		{AC37CA9C-EC46-4164-A556-10A0ADF83558} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
 		{BEEA8068-D3A9-4D5E-9EBC-E976EECB3456} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
 		{1647547B-F3A5-46B4-A856-CFC959B999A4} = {1EC08153-A99B-4661-AF45-7AA674AF0863}
+		{81CC8290-EBE0-4F50-BAA1-EDD31F79723F} = {FA809AD0-F6C9-4E21-91FA-A7D859721C0E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D15D992-48B3-40A4-A87A-59B51994B376}
 	EndGlobalSection
 EndGlobal
